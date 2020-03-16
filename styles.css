@@ -17,7 +17,7 @@ body{
 .header{
     width: 380px;
     height:200px;
-    background-image: url('../img/bg2.jpg');
+    background-image: url('https://images.pexels.com/photos/2603464/pexels-photo-2603464.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
     background-size: 100% 200%;
     background-repeat: no-repeat;
     border-radius: 15px 15px 0 0;
@@ -83,7 +83,7 @@ body{
 .item i.co:hover{
     cursor: pointer;
 }
-.fa-check-circle{
+.fa-plus-circle{
     color:#6eb200;
 }
 .item p.text{
