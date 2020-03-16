@@ -4,6 +4,8 @@ const dateElement = document.getElementById("date")
 
 const list = document.getElementById("list")
 
+const CHECK = "fa-check-circle"
+
 function addToDo(toDo) {
     const text = <li class="item">
         <i class="far fa-circle" job="complete"></i>
@@ -20,11 +22,20 @@ document.addEventListener("keyup", function (event)) {
     if (event.keycode == 13) {
         const toDo = input.value;
         if (toDo) {
-            addToDo(toDo);
+            addToDo(toDo, id, false, false);
+            LIST.push(
+                {
+                    name: toDo,
+                    id: id,
+                    done: false,
+                    trash: false;
+                }
+            );
+            input.value = "";
+            id++;
         }
-        input.value = ""
     }
-}
+});
 
 let LIST = [{}, {}, ...];
 
